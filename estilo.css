@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    margin: 0;
+    background: #0b0d10;
+    color: #e6e6e6;
+}
+
+header {
+    padding: 16px;
+    background: #12161c;
+    border-bottom: 1px solid #1f2630;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 22px;
+}
+
+.server-input {
+    display: flex;
+    gap: 8px;
+}
+
+.server-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #2a3340;
+    background: #0f1318;
+    color: #e6e6e6;
+}
+
+.server-input button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 0;
+    background: #2dd4bf;
+    color: #0b0d10;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.server-input button:hover {
+    filter: brightness(0.95);
+}
+
+main {
+    padding: 16px;
+}
+
+#status {
+    margin-bottom: 12px;
+    color: #9aa3af;
+}
+
+#songList {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+}
+
+#songList li {
+    padding: 12px;
+    border: 1px solid #1f2630;
+    border-radius: 10px;
+    background: #12161c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#songList .meta {
+    display: flex;
+    flex-direction: column;
+}
+
+#songList .title {
+    font-weight: 700;
+}
+
+#songList .artist {
+    color: #9aa3af;
+    font-size: 14px;
+}
+
+#songList button {
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+}
+
+#songList button:hover {
+    filter: brightness(0.95);
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: #0b0d10;
+    border-top: 1px solid #1f2630;
+    padding: 12px 16px;
+}
+
+.player {
+    display: grid;
+    gap: 6px;
+}
+
+#nowPlaying {
+    font-size: 14px;
+    color: #9aa3af;
+}
+
+audio {
+    width: 100%;
+}
